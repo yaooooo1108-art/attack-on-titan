@@ -1,0 +1,39 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100%;
+	min-width:900px;
+	max-width:1500px;
+	background:#c8c6c6;
+	margin:0 auto;
+}
+header{
+	width:100%;
+	background:#f0e5cf;
+}
+footer{
+	width:100%;
+	background:#4b6587;
+}
+.flexcontainer{
+	display:flex;
+	justify-content:space-between;
+}
+.flexitem{
+	width:32%;
+	height:1200px;
+	background:#f7f6f2;
+}
+h1{
+	font-family:"Arial Black";
+	text-align:center;
+}
+h2{
+	font-family:"Arial Black";
+	text-align:center;
+}
+ img{
+ }
