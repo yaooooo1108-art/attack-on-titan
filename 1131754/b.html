@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>報名</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background-color: #f8ede3;
+        font-family: 'Arial', sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5rem;
+        color: #5b3d44;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      .nav-tabs .nav-link {
+        background-color: #b17457;
+        color: #fff;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+
+      .nav-tabs .nav-link:hover {
+        background-color: #4a4947;
+        transition: background-color 0.3s ease;
+      }
+
+      .accordion-button {
+        background-color: #b17457;
+        color: white;
+        border-radius: 10px;
+      }
+
+      .accordion-button:focus {
+        box-shadow: none;
+      }
+
+      .accordion-body {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      input[type="text"], select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      label {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .btn-submit {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #b17457;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        width: 100%;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-submit:hover {
+        background-color: #4a4947;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>軍團介紹與報名</h1>
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab1">憲兵團</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab2">駐紮兵團</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab3">調查兵團</a></li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1">
+          <p>憲兵團的職責是維持牆內的秩序和法律，直接服務於國王與貴族。他們主要駐守於內地，負責管理城市治安、情報工作，以及保護政府機構。由於工作相對安全，加入憲兵團成為許多士兵的夢想。</p>
+        </div>
+        <div class="tab-pane fade" id="tab2">
+          <p>駐紮兵團負責守護牆壁，修復城門，並確保牆內居民的安全。他們是牆壁防禦系統的重要組成部分，平時也處理牆內的治安問題。當巨人攻擊城牆時，他們是第一道防線，負責拖延敵人直到援軍到來。</p>
+        </div>
+        <div class="tab-pane fade" id="tab3">
+          <p>調查兵團的主要任務是前往牆外探索巨人活動的情況，尋找恢復人類自由的可能性。面對巨人的威脅，他們是三個兵團中死亡率最高的部隊。調查兵團以艾爾文·史密斯和利威爾兵長為代表人物。</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <h1>招募文案</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">憲兵團 「權力與責任，為國家服務。」</button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              在憲兵團，你不僅能夠擁有安全穩定的生活，還能接觸到權力的核心。如果你具備冷靜的頭腦，並且能夠在混亂中保持秩序，憲兵團正需要你。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">駐紮兵團 「守護家園，捍衛家人。」</button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              如果你熱愛你的家，願意為了牆內的每一個人而戰，那麼駐紮兵團將是你最好的選擇。加入我們，守護你的家園，讓每個人都能安居樂業。
+            </div>
+          </div>
+        </div>  
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">調查兵團 「挑戰命運，揭開真相。」</button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              你是否渴望突破牆壁的束縛，追尋那未知的世界？加入調查兵團，成為那顆燃燒著探索與自由的火種！
+            </div>
+          </div>
+        </div>  
+      </div>
+
+      <hr>
+
+      <h1>報名表單</h1>
+      <form>
+        <fieldset>
+          <legend>個人資料</legend>
+          <div class="form-group">
+            <label for="userName">姓名：</label>
+            <input type="text" class="form-control" id="userName" name="userName" placeholder="請輸入姓名" required>
+          </div>
+          <div class="form-group">
+            <label for="userphone">連絡電話：</label>
+            <input type="text" class="form-control" id="userphone" name="userphone" placeholder="請輸入電話" required>
+          </div>
+          <div class="form-group">
+            <label>生理性別：</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="usergender" value="gender1" checked>男
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="usergender" value="gender2">女
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="userNumber">想加入哪個軍團？</label>
+            <select name="userNumber" id="userNumber" class="form-control">
+              <option value="憲兵團" selected>憲兵團</option>
+              <option value="駐紮兵團">駐紮兵團</option>
+              <option value="調查兵團">調查兵團</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="userwhy">為何想加入我們？</label>
+            <textarea name="userwhy" id="userwhy" class="form-control" cols="30" rows="4" placeholder="請詳細說明"></textarea>
+          </div>
+        </fieldset>
+
+        <a href="#" class="btn-submit">提交</a>
+      </form>
+    </div>
+  </body>
+</html>
